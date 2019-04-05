@@ -1,3 +1,10 @@
+# Adapted Keyboard Lighting for a Tensorbook
+This is a fork of the original tuxedo-keyboard.
+You can load and unload your lighting settings for trials with 
+```sh
+sudo modprobe -r tuxedo_keyboard && sudo modprobe tuxedo_keyboard
+```
+
 # Table of Content
 - <a href="#description">Description</a>
 - <a href="#building">Building and Install</a>
@@ -61,7 +68,7 @@ sudo dkms install -m tuxedo_keyboard -v 1
 
 Load the module with modprobe
 ```sh
-modprobe tuxedo_keyboard
+sudo modprobe tuxedo_keyboard
 ```
 
 ### Uninstalling the DKMS Module:
@@ -81,7 +88,7 @@ sudo rm -rf /usr/src/tuxedo_keyboard-1
 ## modprobe
 
 ```sh
-modprobe tuxedo_keyboard
+sudo modprobe tuxedo_keyboard
 ```
 
 ## Load the module on boot:
